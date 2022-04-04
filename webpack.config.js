@@ -9,7 +9,7 @@ module.exports = {
   },
   performance: {
     maxEntrypointSize: 1024000,
-    maxAssetSize: 1024000
+    maxAssetSize: 1024000,
   },
   devServer: {
     publicPath: '/public/',
