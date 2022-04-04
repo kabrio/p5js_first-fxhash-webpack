@@ -7,11 +7,13 @@ export function randomInt(min, max) {
   return Math.floor(fxrand() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
 }
 
+// pick one from array
 export function randomPick(arr) {
   return arr[randomInt(0, arr.length)]
 }
 
-export function randomPickEx(arr, count) {
+// pick a specific amount from array
+export function randomPickCount(arr, count) {
   let a = []
   a.push(randomPick(arr))
   while (a.length < count) {
@@ -24,8 +26,9 @@ export function randomPickEx(arr, count) {
   return a
 }
 
-export function randomPickEx2(arr, count, ex) {
-  let a = ex
+// pick a specific amount from array but not 'ex'
+export function randomPickEx(arr, count, exclude) {
+  let a = exclude
   while (a.length < count) {
     let ran = randomPick(arr)
     while (a.includes(ran)) {
@@ -37,8 +40,9 @@ export function randomPickEx2(arr, count, ex) {
   return a
 }
 
+
+// push random pick from one array into another one
 export function randomPickPush(pickArr, count, pushArr) {
-  // pushArr.push(randomPick(pickArr));
   let counter = 0
   while (counter < count) {
     let ran = randomPick(pickArr)
@@ -70,7 +74,7 @@ function uneven(num) {
   return num;
 }
 
-
+//check if number is power of 2
 function powOf2(n) {
  if (typeof n !== 'number') 
   return 'Not a number'; 
@@ -78,6 +82,7 @@ function powOf2(n) {
 return n && (n & (n - 1)) === 0;
 }
 
+// make number into number that is power of 2
 function makePow2(n, w, h) {
   // return n;
   let n1= n, n2 = n;
