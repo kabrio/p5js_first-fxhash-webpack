@@ -1,15 +1,15 @@
-# three-js-webpack
+# p5js-webpack
 
-Starter project for Three.JS. Configured with Webpack 4 as a bundler.
+Starter project for P5js configured with fxhash snippets + fxhash helper functions and Webpack 4 as a bundler.
 
-Great and easy way to bootstrap your Three.JS project.
+Great and easy way to bootstrap your P5js project.
 
 ## Development
 
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/aakatev/three-js-webpack.git
+git clone https://github.com/kabrio/p5js-fxhash-webpack.git
 npm i
 ```
 
