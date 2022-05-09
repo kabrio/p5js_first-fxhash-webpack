@@ -49,3 +49,14 @@ The code can be formated with prettier (don't forget to save file before first!!
 ```bash
 npm run format
 ```
+
+Happy coding! 🐙
+
+
+
+
+
+
+
+
+
