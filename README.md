@@ -27,7 +27,7 @@ Start webpack development server:
 npm run start
 ```
 Enter 'localhost:9000' in your browsers adress bar to view the sketch.
-Webpack configuration is located in [`webpack.config.js`](webpack.config.js).
+If you need to change this, the webpack configuration is done in [`webpack.config.js`](webpack.config.js).
 
 ## Deployment on GitHub Pages
 
